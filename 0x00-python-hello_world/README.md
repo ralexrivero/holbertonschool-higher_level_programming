@@ -1,5 +1,4 @@
-# Holbertonschool higher level programming
-
+# 0x00. Python - Hello, World
 ## Learning Objectives
 ### General
 
