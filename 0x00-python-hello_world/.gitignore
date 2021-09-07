@@ -1,6 +1,8 @@
 # 0x00 project misc
 main.py
 
+# temporal files in vim
+*.swp
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
