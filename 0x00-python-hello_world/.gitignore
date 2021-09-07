@@ -1,5 +1,7 @@
 # 0x00 project misc
 main.py
+10-main.c
+10-linked_lists.c
 
 # temporal files in vim
 *.swp
