@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-letter = 0
-for i in range(ord('z'), ord('a') - 1, -1):
-    print('{}'.format(chr(i - letter)), end='')
-    letter = 32 if letter == 0 else 0
+switch = 25
+for little, big in zip(range(122, 96, -1), range(90, 64, -1)):
+    print('{:c}'.format(little if switch % 2 else big), end='')
+    switch -= 1
