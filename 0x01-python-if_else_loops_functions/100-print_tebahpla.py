@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-switch = 25
-for little, big in zip(range(122, 96, -1), range(90, 64, -1)):
-    print('{:c}'.format(little if switch % 2 else big), end='')
-    switch -= 1
+for i in range(-122, -96):
+    if i % 2 == 0:
+        let = chr(i * -1)
+    else:
+        let = chr((i * -1) - 32)
+    print("{}".format(let), end="")
