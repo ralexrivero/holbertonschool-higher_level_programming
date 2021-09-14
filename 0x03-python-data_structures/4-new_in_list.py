@@ -7,3 +7,4 @@ def new_in_list(my_list, idx, element):
         my_list_cpy = my_list.copy()
         my_list_cpy[idx] = element
         return my_list_cpy
+
