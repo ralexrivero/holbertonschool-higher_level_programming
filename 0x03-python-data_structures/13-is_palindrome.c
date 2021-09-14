@@ -1,31 +1,46 @@
 #include "lists.h"
 /**
- *  * is_palindrome - checks if a singly linked list is a palindrome.
- *   * @head: pointer to firts node
- *    * Return: 0 if it is not a palindrome,
- *    1 if it is a palindrome.
+ * palindrome_h - recursively compares symetric entries in a linked list
+ * @start: start of list, address manually iterated after comparison
+ * @end: end of list, iterated through recursion
+ *  Return: 1 if palindrome, 0 if not
+ */
+int palindrome_h(listint_t **start, listint_t *end)
+{
+int i = 1;
+
+if (end->next != NULL)
+i = palindrome_h(start, end->next);
+
+if (i == 0)
+return (0);
+
+if ((*start)->n != end->n)
+return (0);
+
+*start = (*start)->next;
+
+return (1);
+}
+
+/**
+ * is_palindrome - checks if a linked list is a palindrome
+ * @head: linked list
+ * Return: 1 if palindrome, 0 if not
  */
 int is_palindrome(listint_t **head)
 {
-    int arr[3000], i = 0;
-    listint_t *aux = *head;
+listint_t *start;
+listint_t *end;
 
-    while (aux)
-    {
-        arr[i] = aux->n;
-        aux = aux->next;
-        i++;
-    }
-    aux = *head;
-    i -= 1;
-    while (aux)
-    {
-        if (arr[i] != aux->n)
-        {
-            return (0);
-        }
-        aux = aux->next;
-        i--;
-    }
-    return (1);
+if (head == NULL)
+return (0);
+
+if (*head == NULL)
+return (1);
+
+start = *head;
+end = *head;
+
+return (palindrome_h(&start, end));
 }
