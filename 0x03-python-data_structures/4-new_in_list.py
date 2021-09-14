@@ -4,6 +4,6 @@ def new_in_list(my_list, idx, element):
     elif idx >= len(my_list):
         return my_list
     else:
-        my_list_cp = my_list.copy()
-        my_list_cp[idx] = element
-        return my_list_cp
+        my_list_cpy = my_list.copy()
+        my_list_cpy[idx] = element
+        return my_list_cpy
