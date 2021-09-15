@@ -1,6 +1,9 @@
 #test and misc from 0x03
 *main.py
 100-test_lists.py
+13-main.c
+linked_lists.c
+
 
 #swap from vim
 *.swp
