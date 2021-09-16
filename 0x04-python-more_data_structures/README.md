@@ -34,7 +34,6 @@ Ronald Rivero
 
 ### Connect me!
 
-
 <br>
 <div>
 
@@ -45,3 +44,4 @@ Ronald Rivero
 <a  href="https://github.com/ralexrivero/"  target="_blank">  <img  align="left"  src="https://img.shields.io/github/followers/ralexrivero?style=social"  alt="Ralex | Github">  </a>
 </br>
 </div>
+
