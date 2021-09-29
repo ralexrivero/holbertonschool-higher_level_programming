@@ -1,4 +1,4 @@
-# 
+#  
 ## Learning Objectives
 ### General
 
@@ -11,7 +11,7 @@
 - How to raise a builtin exception
 - When do we need to implement a clean-up action after an exception
 
-
+        1
 ## Environment
 <div>
 <a  href="https://www.cprogramming.com/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/python-logo-inkscape.svg"  alt="C programming language"  ></a> <a  href="https://ubuntu.com/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg"  alt="C programming language"></a> <a  href="https://www.vim.org/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg"  alt="C programming language"></a>
