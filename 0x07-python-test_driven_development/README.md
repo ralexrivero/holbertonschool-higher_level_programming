@@ -1,15 +1,14 @@
-# 0x06. Python - Classes and Objects
+# 0x07. Python - Test-driven development
 ## Learning Objectives
 ### General
 
-- Why Python programming is awesome
-- What’s the difference between errors and exceptions
-- What are exceptions and how to use them
-- When do we need to use exceptions
-- How to correctly handle an exception
-- What’s the purpose of catching exceptions
-- How to raise a builtin exception
-- When do we need to implement a clean-up action after an exception
+    Why Python programming is awesome
+    What’s an interactive test
+    Why tests are important
+    How to write Docstrings to create tests
+    How to write documentation for each module and function
+    What are the basic option flags to create tests
+    How to find edge cases
 
 ## Environment
 <div>
