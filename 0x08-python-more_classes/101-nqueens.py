@@ -1,55 +1,91 @@
 #!/usr/bin/python3
 """ The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard """
-from sys import argv
+def isSafe(m_queen, nqueen):
+    """ Method that determines if the queens can or can't kill each other
+    Args:
+        m_queen: array that has the queens positions
+        nqueen: queen number
+    Returns:
+        True: when queens can't kill each other
+        False: when some of the queens can kill
+    """
 
-if __name__ == "__main__":
-    a = []
-    if len(argv) != 2:
-        print("Usage: nqueens N")
-        exit(1)
-    if argv[1].isdigit() is False:
-        print("N must be a number")
-        exit(1)
-    n = int(argv[1])
-    if n < 4:
-        print("N must be at least 4")
-        exit(1)
+    for i in range(nqueen):
 
-    for i in range(n):
-        a.append([i, None])
-
-    def already_exists(y):
-        """check a queen does not exist in y """
-        for x in range(n):
-            if y == a[x][1]:
-                return True
-        return False
-
-    def reject(x, y):
-        """determines the solution"""
-        if (already_exists(y)):
+        if m_queen[i] == m_queen[nqueen]:
             return False
-        i = 0
-        while(i < x):
-            if abs(a[i][1] - y) == abs(i - x):
-                return False
-            i += 1
-        return True
 
-    def clear_a(x):
-        """clears the answers"""
-        for i in range(x, n):
-            a[i][1] = None
+        if abs(m_queen[i] - m_queen[nqueen]) == abs(i - nqueen):
+            return False
 
-    def nqueens(x):
-        """recursive function"""
-        for y in range(n):
-            clear_a(x)
-            if reject(x, y):
-                a[x][1] = y
-                if (x == n - 1):
-                    print(a)
-                else:
-                    nqueens(x + 1)
+    return True
 
-    nqueens(0)
+
+def print_result(m_queen, nqueen):
+    """ Method that prints the list with the Queens positions
+    Args:
+        m_queen: array that has the queens positions
+        nqueen: queen number
+    """
+
+    res = []
+
+    for i in range(nqueen):
+        res.append([i, m_queen[i]])
+
+    print(res)
+
+
+def Queen(m_queen, nqueen):
+    """ Recursive function that executes the Backtracking algorithm
+    Args:
+        m_queen: array that has the queens positions
+        nqueen: queen number
+    """
+
+    if nqueen is len(m_queen):
+        print_result(m_queen, nqueen)
+        return
+
+    m_queen[nqueen] = -1
+
+    while((m_queen[nqueen] < len(m_queen) - 1)):
+
+        m_queen[nqueen] += 1
+
+        if isSafe(m_queen, nqueen) is True:
+
+            if nqueen is not len(m_queen):
+                Queen(m_queen, nqueen + 1)
+
+
+def solveNQueen(size):
+    """ Function that invokes the Backtracking algorithm
+    Args:
+        size: size of the chessboard
+    """
+
+    m_queen = [-1 for i in range(size)]
+
+    Queen(m_queen, 0)
+
+
+if __name__ == '__main__':
+
+    import sys
+
+    if len(sys.argv) == 1 or len(sys.argv) > 2:
+        print("Usage: nqueens N")
+        sys.exit(1)
+
+    try:
+        size = int(sys.argv[1])
+    except:
+        print("N must be a number")
+        sys.exit(1)
+
+    if size < 4:
+        print("N must be at least 4")
+        sys.exit(1)
+
+    solveNQueen(size)
