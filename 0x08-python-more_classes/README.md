@@ -1,4 +1,4 @@
-# 0x07. Python - Test-driven development
+0x08. Python - More Classes and Objects
 ## Learning Objectives
 ### General
 
