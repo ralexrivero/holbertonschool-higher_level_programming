@@ -39,11 +39,11 @@ int
 
      >>> bg = BaseGeometry()
      >>> bg.integer_validator("width", 89)
-     
+
 
      >>> bg = BaseGeometry()
      >>> bg.integer_validator("really big number", 10000000)
-     
+
 
 ============================================================
 Errors
@@ -84,7 +84,7 @@ TypeErrors:
      >>> bg = BaseGeometry()
      >>> bg.integer_validator("Ronald", [2, 4, 8])
      Traceback (most recent call last):
-     TypeError: stuff must be an integer
+     TypeError: Ronald must be an integer
 
      >>> bg = BaseGeometry()
      >>> bg.integer_validator("int", [])
@@ -148,3 +148,17 @@ errors
      >>> bg.integer_validator("int", 0)
      Traceback (most recent call last):
      ValueError: int must be greater than 0
+
+============================================================
+dictionary
+============================================================
+>>> bg.integer_validator("mes", {"ene", "feb", "mar"})
+Traceback (most recent call last):
+TypeError: month must be an integer
+
+============================================================
+tuple
+============================================================
+>>> bg.integer_validator("days", (31, 29, 30))
+Traceback (most recent call last):
+TypeError: days must be an integer
