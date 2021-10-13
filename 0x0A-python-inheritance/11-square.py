@@ -62,7 +62,8 @@ class Rectangle(BaseGeometry):
 
 class Square(Rectangle):
 
-    """Square class inherits from Rectangle, inherits from BaseGeometry class"""
+    """Square class inherits from Rectangle,
+        inherits from BaseGeometry class"""
 
     def __init__(self, size):
         """Instantiation size attribute
