@@ -28,12 +28,13 @@
 - OS: Ubuntu 14.04 LTS
 - Editor: VIM 7.4.52
 - Compiler: Python 3.4.3
-- Style guidelines: [pycodestyle (version 2.7.*)](https://pep8.org/)
+- Style guidelines: [pycodestyle (version 2.7.*)](https://pypi.org/project/pycodestyle/)
 
 ## Documentation
 - Modules: ```python3 -c 'print(__import__("my_module").__doc__)'```
 - Classes: ```python3 -c 'print(__import__("my_module").MyClass.__doc__)'```
-- Functions (inside and outside a class): ```python3 -c 'print(__import__("my_module").my_function.__doc__)'``` and ```python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'```
+- Functions (inside and outside a class): ```python3 -c 'print(__import__("my_module").my_function.__doc__)'```
+and ```python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'```
 
 ## Python Unit Tests
 
