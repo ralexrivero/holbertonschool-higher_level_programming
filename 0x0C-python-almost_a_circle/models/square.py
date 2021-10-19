@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""`Square` class defination"""
+"""Square class defination"""
 from .rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """inherits from `Rectangle` class"""
+    """inherits from Rectangle class"""
 
     def __init__(self, size, x=0, y=0, id=None):
         """Initializes instance attributes
@@ -23,13 +23,13 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """Retrieves the value of `size`
+        """Retrieves the value of size
         """
         return self.width
 
     @size.setter
     def size(self, value):
-        """sets the dimensions of `Square`"""
+        """sets the dimensions of Square"""
         self.width = value
         self.height = value
 

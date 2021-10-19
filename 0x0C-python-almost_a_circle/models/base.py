@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Contains a class `Base`"""
+"""Contains a class Base"""
 
 
 import json
@@ -98,6 +98,22 @@ class Base:
         instances = [cls.create(**instance) for instance in json]
         return instances
 
+# 20. JSON ok, but CSV? 
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """serialize in csv"""
+        filename = "{}.csv".format(cls.__name__)
+        with open(filename, 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.wirterows() # need an iterable
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """deserialize in csv"""
+        filename = "{}.csv".format(cls.__name__)
+        with open(filename, newline='') as f:
+            reader = csv.reader(f)
+
 # 21. Let's draw it
     @staticmethod
     def draw(list_rectangles, list_squares):
@@ -110,8 +126,8 @@ class Base:
 
         t.color("white")
         t.bgcolor("white")
-        t.shape("circle")
-        t.pensize(4)
+        t.shape("triangle")
+        t.pensize(5)
 
         for i in (list_rectangles + list_squares):
             t.penup()

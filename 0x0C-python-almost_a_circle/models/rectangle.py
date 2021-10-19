@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""`Rectangle` class defination"""
+"""Rectangle class defination"""
 from .base import Base
 
 
 # 2. First Rectangle
 class Rectangle(Base):
-    """Derives `Base` class"""
+    """Derives Base class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializes instance attributes
@@ -52,59 +52,59 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Retrieves the value of `width`
+        """Retrieves the value of width
         """
         return self.__width
 
     @property
     def height(self):
-        """Retrieves the value of `height`
+        """Retrieves the value of height
         """
         return self.__height
 
     @property
     def x(self):
-        """Retrieves the value of `x`
+        """Retrieves the value of x
         """
         return self.__x
 
     @property
     def y(self):
-        """Retrieves the value of `y`
+        """Retrieves the value of y
         """
         return self.__y
 
     @width.setter
     def width(self, value):
-        """sets the value `width`"""
+        """sets the value width"""
         self.validate_input(width=value)
         self.__width = value
 
     @height.setter
     def height(self, value):
-        """sets the value `height`"""
+        """sets the value height"""
         self.validate_input(height=value)
         self.__height = value
 
     @x.setter
     def x(self, value):
-        """sets the value `x`"""
+        """sets the value x"""
         self.validate_input(x=value)
         self.__x = value
 
     @y.setter
     def y(self, value):
-        """sets the value `y`"""
+        """sets the value y"""
         self.validate_input(y=value)
         self.__y = value
 
     def area(self):
-        """Calculates the area of `Rectangle`
+        """Calculates the area of Rectangle
         """
         return (self.__width * self.__height)
 
     def display(self):
-        """Prints in stdout the Rectangle `#`
+        """Prints in stdout the Rectangle #
         """
         [print() for i in range(self.__y)]
         for i in range(self.__height):
