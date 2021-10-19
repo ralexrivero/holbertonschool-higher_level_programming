@@ -7,7 +7,7 @@ import csv
 import os
 
 
-#1
+# 1
 class Base:
     """
         define empty class Base
@@ -98,7 +98,7 @@ class Base:
         instances = [cls.create(**instance) for instance in json]
         return instances
 
-# 21. Let's draw it 
+# 21. Let's draw it
     @staticmethod
     def draw(list_rectangles, list_squares):
         """opens a window and draws all the Rectangles and Squares
