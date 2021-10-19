@@ -109,9 +109,9 @@ class Base:
         import turtle as t
 
         t.color("white")
-        t.bgcolor("gray")
-        t.shape("square")
-        t.pensize(8)
+        t.bgcolor("white")
+        t.shape("circle")
+        t.pensize(4)
 
         for i in (list_rectangles + list_squares):
             t.penup()
