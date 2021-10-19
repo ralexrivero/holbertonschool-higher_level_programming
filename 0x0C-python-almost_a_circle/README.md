@@ -45,6 +45,12 @@ and ```python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'``
 - Execution command: ```python3 -m unittest discover tests```
 - or: ```python3 -m unittest tests/test_models/test_base.py```
 
+## Turtle graphics module
+
+- [Turtle graphics module](https://docs.python.org/3.0/library/turtle.html)
+- install: ```sudo apt-get install python3-tk```
+- Make GUI available outside vagran machine, add this line in Vagrantfile: ```config.ssh.forward_x11 = true```
+
 ## Autor
 
 ```
