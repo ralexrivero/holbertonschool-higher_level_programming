@@ -98,28 +98,28 @@ class Base:
         instances = [cls.create(**instance) for instance in json]
         return instances
 
-# 20. JSON ok, but CSV? 
+# 20. JSON ok, but CSV?
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """serialize in csv"""
-        filename = "{}.csv".format(cls.__name__)
-        with open(filename, 'w', newline='') as f:
-            writer = csv.writer(f)
-            writer.wirterows() # need an iterable
 
     @classmethod
     def load_from_file_csv(cls):
         """deserialize in csv"""
-        filename = "{}.csv".format(cls.__name__)
-        with open(filename, newline='') as f:
+        # open csv file object
+        with open('open.csv', 'r') as f:
+            # construct the csv reader objecto from the file object
             reader = csv.reader(f)
+        file_object = open.csv
+        reader = csv.reader(file_object)
+        for row in reader:
+            print(row)
 
 # 21. Let's draw it
     @staticmethod
     def draw(list_rectangles, list_squares):
         """opens a window and draws all the Rectangles and Squares
         """
-
         import time as x
         from random import randrange as r
         import turtle as t
