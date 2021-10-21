@@ -138,14 +138,17 @@ class Base:
         """
         import time as x
         from random import randrange as r
+        from random import choice as ch
         import turtle as t
 
-        t.color("white")
-        t.bgcolor("white")
-        t.shape("triangle")
-        t.pensize(5)
+        shapes = ["square", "circle"]
+        colors = ["white", "black", "pink", "yellow", "blue", "green"]
 
         for i in (list_rectangles + list_squares):
+            t.color(ch(colors))
+            t.bgcolor(ch(colors))
+            t.shape(ch(shapes))
+            t.pensize(5)
             t.penup()
             t.setpos(0, 0)
             t.Screen().colormode(255)
