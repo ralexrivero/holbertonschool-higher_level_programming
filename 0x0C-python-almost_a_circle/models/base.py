@@ -141,7 +141,7 @@ class Base:
         from random import choice as ch
         import turtle as t
 
-        shapes = ["square", "circle"]
+        shapes = ["square", "circle", "triangle"]
         colors = ["white", "black", "pink", "yellow", "blue", "green"]
 
         for i in (list_rectangles + list_squares):
