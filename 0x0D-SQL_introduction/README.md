@@ -30,7 +30,26 @@
 * Terminal: Bash
 * Editor: VIM 7.4.52
 * Language: SQL
-* MySQL 8.0.25
+* MySQL 8.0.27
+
+>MySQL installation:
+
+```bash
+sudo apt update
+sudo apt install mysql-server
+```
+
+> Connect to MySQL:
+
+```bash
+sudo mysql
+```
+
+> Conteiner on demand:
+
+```bash
+service mysql start
+```
 
 ## Autor
 
