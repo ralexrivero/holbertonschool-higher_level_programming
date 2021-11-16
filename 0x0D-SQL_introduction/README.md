@@ -45,7 +45,7 @@ sudo apt install mysql-server
 sudo mysql
 ```
 
-> Conteiner on demand:
+> Container on demand:
 
 ```bash
 service mysql start
