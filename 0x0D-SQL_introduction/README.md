@@ -56,6 +56,20 @@ sudo mysql
 service mysql start
 ```
 
+## how to execute the SQL commands
+
+```bash
+cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
+```
+
+Passing arguments to the SQL commands:
+
+```bash
+cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
+cat 4-first_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+```
+
 ## Autor
 
 >```Ronald Rivero```
