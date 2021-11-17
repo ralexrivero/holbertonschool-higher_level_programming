@@ -68,6 +68,9 @@ Passing arguments to the SQL commands:
 ```bash
 cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
 cat 4-first_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 | tail -1
 ```
 
 ## Autor
