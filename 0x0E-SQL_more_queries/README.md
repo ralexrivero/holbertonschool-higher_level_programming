@@ -56,18 +56,26 @@ service mysql start
 ## how to execute the SQL commands
 
 ```bash
-cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
-cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
+root@41744616e849:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+Enter password:
+ERROR 1141 (42000) at line 3: There is no such grant defined for user 'user_0d_1' on host 'localhost'
+root@41744616e849:~$ echo "CREATE USER 'user_0d_1'@'localhost';" |  mysql -hlocalhost -uroot -p
+Enter password:
+root@41744616e849:~/$ echo "GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';" |  mysql -hlocalhost -uroot -p
+Enter password:
+root@41744616e849:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+Enter password:
+Grants for user_0d_1@localhost
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE, CREATE ROLE, DROP ROLE ON *.* TO `user_0d_1`@`localhost`
+GRANT APPLICATION_PASSWORD_ADMIN,AUDIT_ADMIN,BACKUP_ADMIN,BINLOG_ADMIN,BINLOG_ENCRYPTION_ADMIN,CLONE_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,FLUSH_OPTIMIZER_COSTS,FLUSH_STATUS,FLUSH_TABLES,FLUSH_USER_RESOURCES,GROUP_REPLICATION_ADMIN,INNODB_REDO_LOG_ARCHIVE,INNODB_REDO_LOG_ENABLE,PERSIST_RO_VARIABLES_ADMIN,REPLICATION_APPLIER,REPLICATION_SLAVE_ADMIN,RESOURCE_GROUP_ADMIN,RESOURCE_GROUP_USER,ROLE_ADMIN,SERVICE_CONNECTION_ADMIN,SESSION_VARIABLES_ADMIN,SET_USER_ID,SHOW_ROUTINE,SYSTEM_USER,SYSTEM_VARIABLES_ADMIN,TABLE_ENCRYPTION_ADMIN,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`localhost`
+ERROR 1141 (42000) at line 4: There is no such grant defined for user 'user_0d_2' on host 'localhost'
+root@41744616e849:~/$
 ```
 
 Passing arguments to the SQL commands:
 
 ```bash
-cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
-cat 4-first_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
-cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
-cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
-cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 | tail -1
+
 ```
 
 ## Autor
