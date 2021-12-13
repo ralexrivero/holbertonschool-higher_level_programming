@@ -4,6 +4,8 @@ const entry = process.argv.length;
 
 if (entry < 3) {
   console.log('No argument');
-} else {
+} else if (entry === 3) {
   console.log('Argument found');
+} else {
+  console.log('Arguments found');
 }
