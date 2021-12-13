@@ -11,9 +11,10 @@ if (entry.length <= 3) {
       continue;
     } else {
       toOrder.push(check);
+      const x = toOrder.length;
+      toOrder.sort(function (a, b) { return a - b; });
+      console.log(toOrder[x - 2]);
     }
   }
 }
-const x = toOrder.length;
-toOrder.sort(function (a, b) { return a - b; });
-console.log(toOrder[x - 2]);
+
