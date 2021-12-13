@@ -4,7 +4,7 @@ const entry = process.argv;
 const toOrder = [];
 let check;
 
-function secBig() {
+function secBig () {
   const x = toOrder.length;
   toOrder.sort(function (a, b) { return a - b; });
   console.log(toOrder[x - 2]);
