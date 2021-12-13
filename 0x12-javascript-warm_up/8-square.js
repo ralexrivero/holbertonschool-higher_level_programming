@@ -8,6 +8,6 @@ if (isNaN(side)) {
   console.log('Missing size');
 } else {
   for (x = 0; x < side; x++) {
-    console.log('x'.repeat(side));
+    console.log('X'.repeat(side));
   }
 }
