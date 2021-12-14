@@ -41,6 +41,11 @@
 * Editor: VIM 7.4.52
 * Language: JavaScript
 * Node.js
+* Style guidelines: Semistandard Code Style
+
+<div>
+<!-- semistandard --> <a href="https://github.com/standard/semistandard" target="_blank"><img height="24px" src="https://raw.githubusercontent.com/standard/semistandard/master/badge.svg" alt="Semistandard Code Style" > </a>
+</div>
 
 >Node installation:
 
