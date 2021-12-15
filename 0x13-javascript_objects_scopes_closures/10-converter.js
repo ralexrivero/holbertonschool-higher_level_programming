@@ -1,5 +1,7 @@
 #!/usr/bin/env
 
 exports.converter = function (base) {
-  return value => value.toString(base);
+  return (number) => {
+    return number.toString(base);
+  };
 };
