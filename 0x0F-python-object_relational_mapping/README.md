@@ -88,7 +88,6 @@ moved in a future release.")
   cursor.execute(statement, parameters)
 ```
 
-
 ## With or without ORM examples
 
 > Without ORM
@@ -122,6 +121,17 @@ all files include the following shebang:
 
 ```bash
 #!/usr/bin/python3
+```
+
+```bash
+$ cat 0-select_states.sql | mysql -uroot -p
+Enter password:
+$ ./0-select_states.py root root hbtn_0e_0_usa
+(1, 'California')
+(2, 'Arizona')
+(3, 'Texas')
+(4, 'New York')
+(5, 'Nevada')
 ```
 
 ## Autor
