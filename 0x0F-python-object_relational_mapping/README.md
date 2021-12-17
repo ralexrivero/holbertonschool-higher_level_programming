@@ -26,15 +26,15 @@
 <!-- Ubuntu --> <a href="https://ubuntu.com/" target="_blank"><img height="24px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg" alt="Ubuntu"> </a> <!-- GNU Bash --> <a href="https://www.vim.org/" target="_blank"><img height="24px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/gnu-bash-logo.svg" alt="GNU Bash"> <!-- Vim --> <a href="https://www.vim.org/" target="_blank"><img height="24px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg" alt="Vim text editor"> </a> <!-- MySQL --> <a href="" target="_blank"><img height="24px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/mysql.svg" alt="MySQL" > </a>
 </div>
 
-* OS: Ubuntu 14.04 LTS
-* Terminal: Bash
+* OS: Ubuntu 20.04 LTS
+* Terminal: Bash 5.0.17
 * Editor: VIM 7.4.52
 * Language: SQL
-* Language: Python
+* Language: Python 3.8.8
 * MySQL 8.0.27
 * modules
-  * ```MySQLdb```
-  * ```SQLAlchemy```
+  * ```MySQLdb``` 2.0.x
+  * ```SQLAlchemy```1.4.x
 
 >MySQL installation:
 
@@ -54,6 +54,40 @@ sudo mysql
 ```bash
 service mysql start
 ```
+
+> MYSQLdb installation:
+
+```bash
+$ sudo apt-get install python3-dev
+$ sudo apt-get install libmysqlclient-dev
+$ sudo apt-get install zlib1g-dev
+$ sudo pip3 install mysqlclient
+...
+$ python3
+>>> import MySQLdb
+>>> MySQLdb.version_info
+(2, 0, 3, 'final', 0)
+```
+
+> SQLAlchemy install:
+
+```bash
+$ sudo pip3 install SQLAlchemy
+...
+$ python3
+>>> import sqlalchemy
+>>> sqlalchemy.__version__
+'1.4.22
+```
+
+The following messege must be ignored:
+
+```bash
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py:552: Warning: (1681, "'@@SESSION.GTID_EXECUTED' is deprecated and will be re
+moved in a future release.")
+  cursor.execute(statement, parameters)
+```
+
 
 ## With or without ORM examples
 
@@ -80,6 +114,14 @@ session = Session(engine)
 for state in session.query(State).order_by(State.id).all(): # HERE: no SQL query, only objects!
     print("{}: {}".format(state.id, state.name))
 session.close()
+```
+
+## Execute files
+
+all files include the following shebang:
+
+```bash
+#!/usr/bin/python3
 ```
 
 ## Autor
