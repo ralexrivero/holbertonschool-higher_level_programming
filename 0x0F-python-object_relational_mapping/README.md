@@ -140,6 +140,11 @@ $ ./1-filter_states.py root root hbtn_0e_0_usa
 (5, 'Nevada')
 ```
 
+```bash
+$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+(2, 'Arizona')
+```
+
 ## Autor
 
 >```Ronald Rivero```
