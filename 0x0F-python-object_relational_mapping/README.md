@@ -145,6 +145,26 @@ $ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
 ```
 
+> SQL injection
+  > Delete all the records in the table
+
+```bash
+./2-my_filter_states.py root root hbtn_0e_0_usa "Arizona'; TRUNCATE TABLE states ; SELECT * FROM states WHERE name = '"
+(2, 'Arizona')
+```
+
+```bash
+$ ./0-select_states.py root root hbtn_0e_0_usa
+$
+```
+
+> SQL injection safe
+
+```bash
+$ ./3-my_safe_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+(2, 'Arizona')
+```
+
 ## Autor
 
 >```Ronald Rivero```
