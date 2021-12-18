@@ -165,6 +165,31 @@ $ ./3-my_safe_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
 ```
 
+> Cities by state
+
+```bash
+cat 4-cities_by_state.sql | mysql -uroot -p
+```
+
+```bash
+$ ./4-cities_by_state.py root root hbtn_0e_4_usa
+(1, 'San Francisco', 'California')
+(2, 'San Jose', 'California')
+(3, 'Los Angeles', 'California')
+(4, 'Fremont', 'California')
+(5, 'Livermore', 'California')
+(6, 'Page', 'Arizona')
+(7, 'Phoenix', 'Arizona')
+(8, 'Dallas', 'Texas')
+(9, 'Houston', 'Texas')
+(10, 'Austin', 'Texas')
+(11, 'New York', 'New York')
+(12, 'Las Vegas', 'Nevada')
+(13, 'Reno', 'Nevada')
+(14, 'Henderson', 'Nevada')
+(15, 'Carson City', 'Nevada')
+```
+
 ## Autor
 
 >```Ronald Rivero```
