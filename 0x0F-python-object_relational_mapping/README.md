@@ -190,6 +190,11 @@ $ ./4-cities_by_state.py root root hbtn_0e_4_usa
 (15, 'Carson City', 'Nevada')
 ```
 
+```bash
+./5-filter_cities.py root root hbtn_0e_4_usa Texas
+Dallas, Houston, Austin
+```
+
 ## Autor
 
 >```Ronald Rivero```
