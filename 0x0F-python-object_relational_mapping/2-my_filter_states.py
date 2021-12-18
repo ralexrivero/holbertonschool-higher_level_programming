@@ -7,19 +7,24 @@ where name matches the argument
 import MySQLdb
 import sys
 
-host = 'localhost'
-port = 3306
-username = sys.argv[1]
-password = sys.argv[2]
-name = sys.argv[3]
-state = str(sys.argv[4])
-
 if __name__ == "__main__":
-    conn = MySQLdb.connect(host=host, port=port, user=username,
-                           passwd=password, db=name, charset="utf8")
     """ not be executed when imported """
+    host = 'localhost'
+    port = 3306
+    username = sys.argv[1]
+    password = sys.argv[2]
+    name = sys.argv[3]
+    state = str(sys.argv[4])
+
+    conn = MySQLdb.connect(host=host,
+                           port=port,
+                           user=username,
+                           passwd=password,
+                           db=name,
+                           charset="utf8"
+                           )
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC"
+    cur.execute("""SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC"""
                 .format(state))
     query_rows = cur.fetchall()
     for row in query_rows:
