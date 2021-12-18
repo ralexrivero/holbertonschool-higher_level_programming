@@ -5,16 +5,16 @@ where name matches the argument
 """
 
 import MySQLdb
-import sys
+from sys import argv
 
 if __name__ == "__main__":
     """ not be executed when imported """
     host = 'localhost'
     port = 3306
-    username = sys.argv[1]
-    password = sys.argv[2]
-    name = sys.argv[3]
-    state = str(sys.argv[4])
+    username = argv[1]
+    password = argv[2]
+    name = argv[3]
+    state = argv[4]
 
     conn = MySQLdb.connect(host=host,
                            port=port,
@@ -24,14 +24,7 @@ if __name__ == "__main__":
                            charset="utf8"
                            )
     cur = conn.cursor()
-    sql = """
-        SELECT
-            *
-        FROM
-            states
-        WHERE
-            name LIKE BINARY %(state)s
-          ORDER BY id ASC""", {'state': state}
+    sql = ("""SELECT * FROM states WHERE name LIKE BINARY %(state)s ORDER BY id ASC""", {'state': state})
     cur.execute(sql)
     query_rows = cur.fetchall()
     for row in query_rows:
