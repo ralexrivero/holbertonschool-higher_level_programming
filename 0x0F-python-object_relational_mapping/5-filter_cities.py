@@ -42,8 +42,6 @@ if __name__ == "__main__":
 
     cur.execute(sql, (state,))
     query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row, end=' ')
-    print()
+    print(", ".join(i[0] for i in query_rows))
     cur.close()
     conn.close()
