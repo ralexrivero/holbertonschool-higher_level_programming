@@ -39,7 +39,7 @@ if __name__ == "__main__":
             id ASC;
     """
 
-    cur.execut(sql, (state,))
+    cur.execute(sql, (state,))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
