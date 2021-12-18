@@ -30,7 +30,7 @@ if __name__ == "__main__":
         FROM
             states
         WHERE
-            name LIKE BINARY %(state)
+            name LIKE BINARY %(state)s
           ORDER BY id ASC""", {
               'state': state
           }
