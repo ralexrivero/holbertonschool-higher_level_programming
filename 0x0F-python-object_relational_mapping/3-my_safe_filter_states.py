@@ -31,9 +31,7 @@ if __name__ == "__main__":
             states
         WHERE
             name LIKE BINARY %(state)s
-          ORDER BY id ASC""", {
-              'state': state
-          }
+          ORDER BY id ASC""", {'state': state}
     cur.execute(sql)
     query_rows = cur.fetchall()
     for row in query_rows:
