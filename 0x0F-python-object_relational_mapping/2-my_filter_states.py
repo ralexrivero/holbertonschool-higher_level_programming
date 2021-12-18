@@ -19,7 +19,7 @@ if __name__ == "__main__":
                            passwd=password, db=name, charset="utf8")
     """ not be executed when imported """
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name = '{:s}'ORDER BY id ASC"
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{:s}' ORDER BY id ASC"
                 .format(state))
     query_rows = cur.fetchall()
     for row in query_rows:
