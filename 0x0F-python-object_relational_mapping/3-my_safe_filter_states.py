@@ -24,8 +24,8 @@ if __name__ == "__main__":
                            charset="utf8"
                            )
     cur = conn.cursor()
-    sql = ("""SELECT * FROM states WHERE name LIKE BINARY %(state)s ORDER BY id ASC""", {'state': state})
-    cur.execute(sql)
+    sql = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
+    cur.execute(sql, (state))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
