@@ -6,9 +6,6 @@ List all states with a name starting with N (upper N)
 import MySQLdb
 import sys
 
-
-
-
 if __name__ == "__main__":
     """ not be executed when imported """
     host = 'localhost'
