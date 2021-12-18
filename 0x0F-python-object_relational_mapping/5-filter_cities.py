@@ -4,6 +4,7 @@ takes in the name of a state as an argument
 and lists all cities of that state
 """
 if __name__ == "__main__":
+    """ not executed when imported """
     from sys import argv
     import MySQLdb
 
@@ -20,7 +21,7 @@ if __name__ == "__main__":
                            user=username,
                            passwd=password,
                            db=database,
-                           charse='utf8'
+                           charset='utf8'
                            )
 
     cur = conn.cursor()
