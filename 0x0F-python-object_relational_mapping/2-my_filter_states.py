@@ -17,6 +17,7 @@ state = str(sys.argv[4])
 if __name__ == "__main__":
     conn = MySQLdb.connect(host=host, port=port, user=username,
                            passwd=password, db=name, charset="utf8")
+    """ not be executed when imported """
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name = '{:s}'ORDER BY id ASC"
                 .format(state))

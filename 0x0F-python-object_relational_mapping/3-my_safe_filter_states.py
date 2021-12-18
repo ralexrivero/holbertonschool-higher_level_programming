@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-
-import MySQLdb
-import sys
-
 """
 takes in arguments and sisplays all values in the sates table of database
 where name matches the argument, safe from MySQL injections
 """
+
+import MySQLdb
+import sys
 
 host = 'localhost'
 port = 3306
@@ -16,6 +15,7 @@ name = sys.argv[3]
 
 
 if __name__ == "__main__":
+    """ not be executed when imported """
     conn = MySQLdb.connect(host=host, port=port, user=username,
                            passwd=password, db=name, charset="utf8")
     cur = conn.cursor()
