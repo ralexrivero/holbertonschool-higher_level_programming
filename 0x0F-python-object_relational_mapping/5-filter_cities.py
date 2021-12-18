@@ -37,7 +37,7 @@ if __name__ == "__main__":
         WHERE
             states.name = %s
         ORDER BY
-            id ASC;
+            cities.id ASC;
     """
 
     cur.execute(sql, (state,))
