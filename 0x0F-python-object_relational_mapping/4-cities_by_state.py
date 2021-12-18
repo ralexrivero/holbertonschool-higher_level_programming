@@ -19,7 +19,14 @@ if __name__ == "__main__":
                            charset="utf8"
                            )
     cur = conn.cursor()
-    sql = "SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id=states.id"
+    sql = """
+        SELECT
+            cities.id, cities.name, states.name
+        FROM
+            cities
+        INNER JOIN
+            states ON
+                cities.state_id=states.id"""
     cur.execute(sql)
     query_rows = cur.fetchall()
     for row in query_rows:
