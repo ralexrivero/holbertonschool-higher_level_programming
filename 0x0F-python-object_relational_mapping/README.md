@@ -195,6 +195,19 @@ $ ./4-cities_by_state.py root root hbtn_0e_4_usa
 Dallas, Houston, Austin
 ```
 
+```bash
+$ cat 6-model_state.sql | mysql -uroot -p
+Enter password:
+```
+
+```bash
+$ ./6-model_state.py root root hbtn_0e_6_usa
+$ cat 6-model_state.sql | mysql -uroot -p
+Enter password:
+Table   Create Table
+states  CREATE TABLE `states` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(128) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
+```
+
 ## Autor
 
 >```Ronald Rivero```
