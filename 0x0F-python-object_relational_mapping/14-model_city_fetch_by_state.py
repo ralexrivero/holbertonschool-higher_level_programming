@@ -18,9 +18,8 @@ if __name__ == "__main__":
                         (user, password, database), pool_pre_ping=True)
     Base.metadata.create_all(eng)
     ses = Session(eng)
-    new_table = ses.query(City, State)\
-               .filter(City.state_id == State.id)\
-               .order_by(City.id.asc()).all()
+    new_table = ses.query(City, State).filter(City.state_id == State.id)\
+        .order_by(City.id.asc()).all()
     for cities, states in new_table:
         print("{}: ({}) {}".format(states.name, cities.id, cities.name))
     ses.close()
