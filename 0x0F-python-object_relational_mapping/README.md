@@ -208,6 +208,23 @@ Table   Create Table
 states  CREATE TABLE `states` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(128) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
 ```
 
+---
+
+## ORM
+
+```bash
+cat 7-model_state_fetch_all.sql | mysql -uroot -p hbtn_0e_6_usa
+```
+
+```bash
+$./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+1: California
+2: Arizona
+3: Texas
+4: New York
+5: Nevada
+```
+
 ## Autor
 
 >```Ronald Rivero```
