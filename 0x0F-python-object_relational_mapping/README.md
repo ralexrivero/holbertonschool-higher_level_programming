@@ -245,6 +245,36 @@ $ ./12-model_state_update_id_2.py root root hbtn_0e_6_usa
 $
 ```
 
+```bash
+$ ./13-model_state_delete_a.py root root hbtn_0e_6_usa
+$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+2: New Mexico
+4: New York
+$
+```
+
+```bash
+$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
+Enter password:
+$ ./14-model_city_fetch_by_state.py root root hbtn_0e_14_usa
+California: (1) San Francisco
+California: (2) San Jose
+California: (3) Los Angeles
+California: (4) Fremont
+California: (5) Livermore
+Arizona: (6) Page
+Arizona: (7) Phoenix
+Texas: (8) Dallas
+Texas: (9) Houston
+Texas: (10) Austin
+New York: (11) New York
+Nevada: (12) Las Vegas
+Nevada: (13) Reno
+Nevada: (14) Henderson
+Nevada: (15) Carson City
+$
+```
+
 ## Autor
 
 >```Ronald Rivero```
