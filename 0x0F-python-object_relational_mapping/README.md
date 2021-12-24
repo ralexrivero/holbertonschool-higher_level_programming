@@ -290,6 +290,32 @@ id  name    state_id
 1   San Francisco   1
 ```
 
+```bash
+$ cat 101-relationship_states_cities_list.sql | mysql -uroot -p
+$ ./101-relationship_states_cities_list.py root root hbtn_0e_101_usa
+1: California
+    1: San Francisco
+    2: San Jose
+    3: Los Angeles
+    4: Fremont
+    5: Livermore
+2: Arizona
+    6: Page
+    7: Phoenix
+3: Texas
+    8: Dallas
+    9: Houston
+    10: Austin
+4: New York
+    11: New York
+5: Nevada
+    12: Las Vegas
+    13: Reno
+    14: Henderson
+    15: Carson City
+$
+```
+
 ## Autor
 
 >```Ronald Rivero```
