@@ -8,7 +8,7 @@ from model_state import Base
 
 class City(Base):
     """ City class """
-    __table__ = 'cities'
+    __tablename__ = 'cities'
     id = Column(
                 Integer,
                 autoincrement=True,
