@@ -1,31 +1,27 @@
 #!/usr/bin/python3
-""" relationship city """
-
-from sqlalchemy.ext.declarative import declarative_base
+"""
+class definition of city, similar to state
+"""
 from sqlalchemy import Column, Integer, String, ForeignKey
-
-Base = declarative_base()
+from relationship_state import Base
 
 
 class City(Base):
-    """ class city """
+    """ City class """
     __tablename__ = 'cities'
-
     id = Column(
-        Integer,
-        primary_key=True,
-        autoincrement='auto',
-        nullable=False,
-        unique=True
-    )
-
+                Integer,
+                autoincrement=True,
+                unique=True,
+                nullable=False,
+                primary_key=True
+                )
     name = Column(
-        String(128),
-        nullable=False
-    )
-
+                  String(128),
+                  nullable=False
+                  )
     state_id = Column(
-        Integer,
-        ForeignKey('states.id'),
-        nullable=False
-    )
+                      Integer,
+                      ForeignKey("states.id"),
+                      nullable=False,
+                      )

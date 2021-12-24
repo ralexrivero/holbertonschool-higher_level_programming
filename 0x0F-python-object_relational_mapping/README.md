@@ -275,6 +275,21 @@ Nevada: (15) Carson City
 $
 ```
 
+```bash
+$ cat 100-relationship_states_cities.sql | mysql -uroot -p
+Enter password:
+```
+
+```bash
+$ ./100-relationship_states_cities.py root root hbtn_0e_100_usa
+$ cat 100-relationship_states_cities.sql | mysql -uroot -p
+Enter password:
+id  name
+1   California
+id  name    state_id
+1   San Francisco   1
+```
+
 ## Autor
 
 >```Ronald Rivero```
