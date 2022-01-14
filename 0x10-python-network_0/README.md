@@ -57,9 +57,10 @@ root@ead65a4ee2aa:#
 ```
 
 ```bash
-root@ead65a4ee2aa:#./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
-Who are you?
-root@ead65a4ee2aa:#
+root@ead65a4ee2aa:/holbertonschool-higher_level_programming/0x10-python-network_0# ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
+Hello Holberton School!
+root@ead65a4ee2aa:/holbertonschool-higher_level_programming/0x10-python-network_0#
+
 ```
 
 ## Author
