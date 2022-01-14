@@ -57,7 +57,7 @@ root@ead65a4ee2aa:#
 ```
 
 ```bash
-root@ead65a4ee2aa:# curl -sL 0.0.0.0:5000/route_5 ; echo ""
+root@ead65a4ee2aa:#./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
 Who are you?
 root@ead65a4ee2aa:#
 ```
