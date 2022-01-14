@@ -33,21 +33,33 @@
 ## Execute the code
 
 ```bash
-root@ead65a4ee2aa:/# ./0-body_size.sh 0.0.0.0:5000
+root@ead65a4ee2aa:#./0-body_size.sh 0.0.0.0:5000
 10
-root@ead65a4ee2aa:/#
+root@ead65a4ee2aa:#
 ```
 
 ```bash
-root@ead65a4ee2aa:/# ./1-body.sh 0.0.0.0:5000/route_1 ; echo ""
+root@ead65a4ee2aa:#./1-body.sh 0.0.0.0:5000/route_1 ; echo ""
 Route 2
-root@ead65a4ee2aa:/#
+root@ead65a4ee2aa:#
 ```
 
 ```bash
-root@ead65a4ee2aa:/# ./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
+root@ead65a4ee2aa:#./2-delete.sh 0.0.0.0:5000/route_3 ; echo ""
 I'm a DELETE request
-root@ead65a4ee2aa:/#
+root@ead65a4ee2aa:#
+```
+
+```bash
+root@ead65a4ee2aa:#./3-methods.sh 0.0.0.0:5000/route_4
+OPTIONS, HEAD, PUT
+root@ead65a4ee2aa:#
+```
+
+```bash
+root@ead65a4ee2aa:# curl -sL 0.0.0.0:5000/route_5 ; echo ""
+Who are you?
+root@ead65a4ee2aa:#
 ```
 
 ## Author
