@@ -119,8 +119,6 @@ root@ead65a4ee2aa:#
 root@ead65a4ee2aa:# ./102-catch_me.sh ; echo ""
 You got me!
 root@ead65a4ee2aa:#
-
-
 ```
 
 ## Author
