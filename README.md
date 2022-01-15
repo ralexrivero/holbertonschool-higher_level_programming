@@ -1,11 +1,12 @@
 # Holbertonschool higher level programming
 
 ## Learning Objectives
+
 ### General
 
 ### Zen
 
-```
+```python
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -27,8 +28,8 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
 ```
+
 ## Environment
 <div>
 <a  href="https://www.cprogramming.com/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/python-logo-inkscape.svg"  alt="C programming language"  ></a> <a  href="https://ubuntu.com/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg"  alt="C programming language"></a> <a  href="https://www.vim.org/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg"  alt="C programming language"></a>
@@ -40,20 +41,11 @@ Namespaces are one honking great idea -- let's do more of those!
 - Compiler: Python 3.4.3
 - Style guidelines: [PEP8](https://pep8.org/)
 
-  
-  
-  
-
 ## Autor
 
-  
-
-```
-Ronald Rivero
-```
+```Ronald Rivero```
 
 ### Connect me!
-
 
 <br>
 <div>
@@ -65,4 +57,3 @@ Ronald Rivero
 <a  href="https://github.com/ralexrivero/"  target="_blank">  <img  align="left"  src="https://img.shields.io/github/followers/ralexrivero?style=social"  alt="Ralex | Github">  </a>
 </br>
 </div>
-
