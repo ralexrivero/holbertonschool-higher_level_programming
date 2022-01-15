@@ -31,8 +31,9 @@
 
 ## Environment
 
-* ```vi```, ```vim```, ```emacs```
+
 * ```Ubuntu 20.04 LTS```
+* ```vim```,```VSCode```
 * Bash scripting
 * ```curl```
 * ```python```
