@@ -82,6 +82,12 @@ None
 root@ead65a4ee2aa:#
 ```
 
+```bash
+root@ead65a4ee2aa:# ./100-status_code.sh 0.0.0.0:5000 ; echo ""
+200
+root@ead65a4ee2aa:#
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
