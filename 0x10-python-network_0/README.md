@@ -92,6 +92,37 @@ root@ead65a4ee2aa:#
 
 ```
 
+```bash
+0# cat my_json_0
+{
+    "name": "John Doe",
+    "age": 33
+}
+root@ead65a4ee2aa:# ./101-post_json.sh 0.0.0.0:5000/route_json my_json_0 ; echo ""
+Valid JSON
+root@ead65a4ee2aa:# cat my_json_1
+I'm a JSON! really!
+root@ead65a4ee2aa:# ./101-post_json.sh 0.0.0.0:5000/route_json my_json_1 ; echo ""
+Not a valid JSON
+root@ead65a4ee2aa:#
+root@ead65a4ee2aa:# cat my_json_2
+{
+    "name": "John Doe",
+    "age": 33,
+}
+root@ead65a4ee2aa:# ./101-post_json.sh 0.0.0.0:5000/route_json my_json_2 ; echo ""
+Not a valid JSON
+root@ead65a4ee2aa:#
+```
+
+```bash
+root@ead65a4ee2aa:# ./102-catch_me.sh ; echo ""
+You got me!
+root@ead65a4ee2aa:#
+
+
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
