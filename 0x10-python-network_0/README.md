@@ -57,9 +57,9 @@ root@ead65a4ee2aa:#
 ```
 
 ```bash
-root@ead65a4ee2aa:/holbertonschool-higher_level_programming/0x10-python-network_0# ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
+root@ead65a4ee2aa:# ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
 Hello Holberton School!
-root@ead65a4ee2aa:/holbertonschool-higher_level_programming/0x10-python-network_0#
+root@ead65a4ee2aa:#
 
 ```
 
@@ -68,6 +68,17 @@ root@ead65a4ee2aa:# ./5-post_params.sh 0.0.0.0:5000/route_6 ; echo ""
 POST params:
 	email: test@gmail.com
 	subject: I will always be here for PLD
+root@ead65a4ee2aa:#
+```
+
+```bash
+root@ead65a4ee2aa:#0x10-python-network_0$ ./6-main.py
+6
+4
+2
+None
+2
+4
 root@ead65a4ee2aa:#
 ```
 
