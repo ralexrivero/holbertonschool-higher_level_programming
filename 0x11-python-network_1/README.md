@@ -78,6 +78,33 @@ Your email is: hr@holbertonschool.com
 root@e382c2227c62:/#
 ```
 
+```bash
+root@e382c2227c62:/# ./3-error_code.py http://0.0.0.0:5000
+Index
+root@e382c2227c62:/# ./3-error_code.py http://0.0.0.0:5000/status_401Error code: 401
+root@e382c2227c62:/# ./3-error_code.py http://0.0.0.0:5000/doesnt_exist
+Error code: 404
+root@e382c2227c62:/# ./3-error_code.py http://0.0.0.0:5000/status_500Error code: 500
+root@e382c2227c62:/#
+```
+
+```bash
+vagrant@ubuntu-jammy:$ ./4-hbtn_status.py | cat -e
+Body response:$
+        - type: <class 'str'>$
+        - content: OK$
+vagrant@ubuntu-jammy:$
+```
+
+```bash
+vagrant@ubuntu-jammy:$ ./5-hbtn_header.py https://intranet.hbtn.io
+c5c8e0f9-e4f7-4994-ba06-0f9feb8f1300
+vagrant@ubuntu-jammy:$
+vagrant@ubuntu-jammy:$ ./5-hbtn_header.py https://intranet.hbtn.io
+fe09f7af-91f3-46c3-be63-2710cd4598d9
+vagrant@ubuntu-jammy:$
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
