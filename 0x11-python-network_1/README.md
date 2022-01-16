@@ -72,6 +72,12 @@ dc51682b-1ddd-42d8-9cca-7363bc362144
 vagrant@ubuntu-jammy:$
 ```
 
+```bash
+root@e382c2227c62:/# ./2-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
+Your email is: hr@holbertonschool.com
+root@e382c2227c62:/#
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
