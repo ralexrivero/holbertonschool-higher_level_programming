@@ -75,8 +75,8 @@ root@ead65a4ee2aa:#
 ```bash
 root@ead65a4ee2aa:# ./5-post_params.sh 0.0.0.0:5000/route_6 ; echo ""
 POST params:
-	email: test@gmail.com
-	subject: I will always be here for PLD
+    email: test@gmail.com
+    subject: I will always be here for PLD
 root@ead65a4ee2aa:#
 ```
 

@@ -22,6 +22,7 @@
 ## Environment
 
 * ```Ubuntu 20.04 LTS```
+* ``Ubuntu 14.04``
 * ```vim```, ```VSCode```
 * Bash scripting
 * ```curl```
@@ -30,10 +31,37 @@
 * ```PEP 8``` 1.7
 * documented classes and functions
 
-## Execute the code
+* vagrant: [Ubuntu 14 jammy 64](https://app.vagrantup.com/ubuntu/boxes/jammy64)
 
 ```bash
+$ vagrant init ubuntu/jammy64
+$ vagrant up
+$ vagrant ssh
+vagrant init ubuntu/jammy64 $
+```
 
+## Test docstrings
+
+> `python3 -c 'print(__import__("my_module").__doc__)'`
+
+```bash
+vagrant@ubuntu-jammy:$ python3 -c 'print(__import__("0-hbtn_status").__doc__)'
+
+fetch https://intranet.hbtn.io/status with urllib
+
+vagrant@ubuntu-jammy:$
+
+```
+
+## Run the code
+
+```bash
+vagrant@ubuntu-jammy:$ ./0-hbtn_status.py | cat -e
+Body response:$
+        - type: <class 'bytes'>$
+        - content: b'OK'$
+        - utf8 content: OK$
+vagrant@ubuntu-jammy:$
 ```
 
 ## Author
