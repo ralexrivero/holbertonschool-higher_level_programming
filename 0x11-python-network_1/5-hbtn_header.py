@@ -8,8 +8,5 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    url = argv[1]
-    if url is None:
-        exit
-    r = requests.get(url)
+    r = requests.get(argv[1])
     print(r.headers['X-Request-Id'])
