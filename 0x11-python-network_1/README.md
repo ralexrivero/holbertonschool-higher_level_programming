@@ -64,6 +64,14 @@ Body response:$
 vagrant@ubuntu-jammy:$
 ```
 
+```bash
+vagrant@ubuntu-jammy:$ ./1-hbtn_header.py https://intranet.hbtn.io
+dfef1727-13a2-4f8c-8f97-a08c50411724
+vagrant@ubuntu-jammy:$ ./1-hbtn_header.py https://intranet.hbtn.io
+dc51682b-1ddd-42d8-9cca-7363bc362144
+vagrant@ubuntu-jammy:$
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
