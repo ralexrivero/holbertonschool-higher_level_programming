@@ -105,6 +105,20 @@ fe09f7af-91f3-46c3-be63-2710cd4598d9
 vagrant@ubuntu-jammy:$
 ```
 
+```bash
+root@e382c2227c62:/# ./8-json_api.py a
+[4242] alboazzevim
+root@e382c2227c62:/# ./8-json_api.py
+No result
+root@e382c2227c62:/# ./8-json_api.py a
+[3926] alvtxffyyfa
+root@e382c2227c62:/# ./8-json_api.py 2
+No result
+root@e382c2227c62:/# ./8-json_api.py b
+[666] btaooqscjev
+root@e382c2227c62:/#
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
