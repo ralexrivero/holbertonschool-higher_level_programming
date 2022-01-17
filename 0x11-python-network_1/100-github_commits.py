@@ -16,6 +16,6 @@ if __name__ == "__main__":
     r = requests.get(url)
     if r.status_code == 200:
         for i in r.json()[:10]:
-            print(i.get('sha'), i.get('commit').get('author').get('name'))
+            print("{}: {}".format(i.get("sha"), i.get("commit").get("author").get("name")))
     else:
         print("Error code: {}".format(r.status_code))

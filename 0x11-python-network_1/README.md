@@ -148,6 +148,21 @@ vagrant@ubuntu-jammy:$ python-network_1$ ./10-my_github.py username token
 vagrant@ubuntu-jammy:$
 ```
 
+```bash
+vagrant@ubuntu-jammy:$ ./100-github_commits.py rails rails
+83a4fa414bc9e5008825f47857fdd80e85c82033 Santiago Ramirez
+18e3226c9bf7265ce9e1edc41dee7581856fb574 Jean Boussier
+e2865d5f45f07a1d2fd5cb4487bea6f778a71e34 Jean Boussier
+c2da0add54e8a9edad527817a8a50c28bb302025 Jean Boussier
+90e0b2b1510743e78e65a2e7611eb98778d87e3b Jonathan Hefner
+0638d35a7870663a84dcd2c3ed6edb696397043c Rafael Mendonça França
+c03fddfa0a64cc839f08391f7b4aea881a421e2c Drew Tempelmeyer
+bfb756bc881a13efa98d925737f61e21f43dab27 Rafael Mendonça França
+ea5792a021ada23ef37f59bc02d9f087d14c6d03 Rafael Mendonça França
+85542a0c9041dc2502b2a5afff52085fc36dca19 Andrew White
+vagrant@ubuntu-jammy:$
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
