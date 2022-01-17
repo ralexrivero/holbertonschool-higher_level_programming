@@ -106,6 +106,23 @@ vagrant@ubuntu-jammy:$
 ```
 
 ```bash
+root@e382c2227c62:/# ./6-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
+Your email is: hr@holbertonschool.com
+root@e382c2227c62:/#
+```
+
+```bash
+root@e382c2227c62:/# ./7-error_code.py http://0.0.0.0:5000
+Index
+root@e382c2227c62:/# ./7-error_code.py http://0.0.0.0:5000/status_401Error code: 401
+root@e382c2227c62:/# ./7-error_code.py http://0.0.0.0:5000/doesnt_exist
+Error code: 404
+root@e382c2227c62:/# ./7-error_code.py http://0.0.0.0:5000/status_500Error code: 500
+root@e382c2227c62:/#
+
+```
+
+```bash
 root@e382c2227c62:/# ./8-json_api.py a
 [4242] alboazzevim
 root@e382c2227c62:/# ./8-json_api.py
