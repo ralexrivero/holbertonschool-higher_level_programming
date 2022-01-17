@@ -142,6 +142,12 @@ root@e382c2227c62:/# ./8-json_api.py b
 root@e382c2227c62:/#
 ```
 
+```bash
+vagrant@ubuntu-jammy:$ python-network_1$ ./10-my_github.py username token
+85240358
+vagrant@ubuntu-jammy:$
+```
+
 ## Author
 
 <!-- social media and professional portfolio-->
