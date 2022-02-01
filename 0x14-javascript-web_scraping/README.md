@@ -67,6 +67,12 @@ Python is cool
 ralex@ralex-nb:$ 
 ```
 
+> status code of a ``GET`` request
+
+```bash
+
+```
+
 
 
 ## Author
