@@ -19,25 +19,46 @@
 * Shebang: ``#!/usr/bin/node``
 
 
-## install Node 10
+### install Node 10
 
 ```bash
 $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
-## Install semi-standard
+### Install semi-standard
 
 ```bash
 $ sudo npm install semistandard --global
 ```
 
-## Install request module and use it
+### Install request module and use it
 
 ```bash
 $ sudo npm install request --global
 $ export NODE_PATH=/usr/lib/node_modules
 ```
+
+## Run the code
+
+> reading file and parsing it with Node.js
+
+```bash
+ralex@ralex-nb:$ cat cisfun 
+C is super fun!
+ralex@ralex-nb:$ ./0-readme.js cisfun
+C is super fun!
+
+ralex@ralex-nb:$ ./0-readme.js doesntexist
+{ [Error: ENOENT: no such file or directory, open 'doesntexist']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'doesntexist' }
+ralex@ralex-nb:$ 
+```
+
+> 
 
 ## Author
 <!-- twitter -->
