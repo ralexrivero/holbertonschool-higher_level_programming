@@ -58,7 +58,16 @@ ralex@ralex-nb:$ ./0-readme.js doesntexist
 ralex@ralex-nb:$ 
 ```
 
-> 
+> write to a file
+
+```bash
+ralex@ralex-nb:$ ./1-writeme.js my_file.txt "Python is cool"
+ralex@ralex-nb:$ cat my_file.txt ; echo ""
+Python is cool
+ralex@ralex-nb:$ 
+```
+
+
 
 ## Author
 <!-- twitter -->
