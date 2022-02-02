@@ -17,7 +17,7 @@
 * Node.js 
 
 * Shebang: ``#!/usr/bin/node``
-
+* Star Wars api: [swapi-api.hbtn.io](https://swapi-api.hbtn.io/)
 
 ### install Node 10
 
@@ -70,10 +70,19 @@ ralex@ralex-nb:$
 > status code of a ``GET`` request
 
 ```bash
-
+ralex@ralex-nb:$ ./2-statuscode.js https://www.xelar.tech
+code: 200
+ralex@ralex-nb:$ ./2-statuscode.js https://www.xelar.tech/doesntexist
+code: 404
+ralex@ralex-nb:$ 
 ```
 
+> Prints the title of a Star Wars movie where the episode number matches a given integer
 
+
+```bash
+
+```
 
 ## Author
 <!-- twitter -->
