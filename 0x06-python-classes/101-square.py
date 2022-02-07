@@ -68,4 +68,4 @@ class Square:
     def my_print(self):
         ''' method that prints the square
         '''
-        print (self)
+        print(self)

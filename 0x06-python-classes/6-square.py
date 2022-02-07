@@ -51,6 +51,7 @@ class Square:
             for _ in range(position):
                 print(' ', end='')
             print(size * '#')
+
     @property
     def position(self):
         """makes the private attribute self
