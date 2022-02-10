@@ -11,6 +11,20 @@
             ▀▀                                  
 ```
 
+## General
+
+* JQuery make front-end programming
+* Select HTML elements in JavaScript
+* Select HTML elements with JQuery
+* What are differences between ``ID``, ``class`` and ``tag name`` selectors
+* Modify an HTML element style
+* Get and update an HTML element content
+* Modify the DOM
+* Make a ``GET`` request with JQuery Ajax
+* Make a ``POST`` request with JQuery Ajax
+* Listen/bind to DOM events
+* Listen/bind to user events
+
 ## Environment
 <!-- ubuntu -->
 [![Ubuntu](https://img.shields.io/static/v1?label=&message=Ubuntu&color=E95420&logo=Ubuntu&logoColor=E95420&labelColor=2F333A)](https://ubuntu.com/) <!-- kali linux -->
@@ -30,6 +44,9 @@
 [![CSS3](https://img.shields.io/static/v1?label=&message=CSS3&color=0071B5&logo=CSS3&logoColor=1572B6&labelColor=2F333A)](https://developer.mozilla.org/en-US/docs/Web/CSS) <!-- JS -->
 [![JS](https://img.shields.io/static/v1?label=&message=JavaScript&color=D4B830&logo=JavaScript&logoColor=F7DF1E&labelColor=2F333A)](https://www.javascript.com) <!-- jquery -->
 [![jQuery](https://img.shields.io/static/v1?label=&message=jQuery&color=21609B&logo=jQuery&logoColor=0769AD&labelColor=2F333A)](https://jquery.com)
+
+* codestyle guideliness ``semistandard``
+``--global $: semistandard *.js --global $``
 
 ## Run the code
 
