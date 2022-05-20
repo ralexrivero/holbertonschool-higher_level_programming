@@ -1,13 +1,13 @@
 # 0x0C. Python - Almost a circle
 ```
-       _                     _                  _          _      
-      | |                   | |                (_)        | |     
-  __ _| |_ __ ___   ___  ___| |_    __ _    ___ _ _ __ ___| | ___ 
+       _                     _                  _          _
+      | |                   | |                (_)        | |
+  __ _| |_ __ ___   ___  ___| |_    __ _    ___ _ _ __ ___| | ___
  / _` | | '_ ` _ \ / _ \/ __| __|  / _` |  / __| | '__/ __| |/ _ \
 | (_| | | | | | | | (_) \__ \ |_  | (_| | | (__| | | | (__| |  __/
  \__,_|_|_| |_| |_|\___/|___/\__|  \__,_|  \___|_|_|  \___|_|\___|
-                                                                  
-                                                                  
+
+
 ```
 ## Learning Objectives
 ### General
@@ -64,7 +64,7 @@ Ronald Rivero
 
 <a  href="https://twitter.com/ralex_uy"  target="_blank">  <img  align="left"  alt="Ronald Rivero | Twitter"  src="https://img.shields.io/twitter/follow/ralex_uy?style=social"/>  </a>
 
-<a  href="https://www.linkedin.com/in/ronald-rivero/"  target="_blank">  <img  align="left"  alt="Ronald Rivero | LinkedIn"  src="https://img.shields.io/badge/LinkedIn-+19K-blue?style=social&logo=linkedin"/>  </a>
+<a  href="https://www.linkedin.com/in/ronald-rivero/"  target="_blank">  <img  align="left"  alt="Ronald Rivero | LinkedIn"  src="https://img.shields.io/badge/LinkedIn-+24K-blue?style=social&logo=linkedin"/>  </a>
 
 <a  href="https://github.com/ralexrivero/"  target="_blank">  <img  align="left"  src="https://img.shields.io/github/followers/ralexrivero?style=social"  alt="Ralex | Github">  </a>
 </br>

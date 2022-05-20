@@ -14,7 +14,7 @@
 * IDE: ``Vim``, ``VS Code``
 * Language: ``JavaScript``
 * Style guidelines: ``semistandard`` ``Airbnb style``
-* Node.js 
+* Node.js
 
 * Shebang: ``#!/usr/bin/node``
 * Star Wars api: [swapi-api.hbtn.io](https://swapi-api.hbtn.io/)
@@ -44,7 +44,7 @@ $ export NODE_PATH=/usr/lib/node_modules
 > reading file and parsing it with Node.js
 
 ```bash
-ralex@ralex-nb:$ cat cisfun 
+ralex@ralex-nb:$ cat cisfun
 C is super fun!
 ralex@ralex-nb:$ ./0-readme.js cisfun
 C is super fun!
@@ -55,7 +55,7 @@ ralex@ralex-nb:$ ./0-readme.js doesntexist
   code: 'ENOENT',
   syscall: 'open',
   path: 'doesntexist' }
-ralex@ralex-nb:$ 
+ralex@ralex-nb:$
 ```
 
 > write to a file
@@ -64,7 +64,7 @@ ralex@ralex-nb:$
 ralex@ralex-nb:$ ./1-writeme.js my_file.txt "Python is cool"
 ralex@ralex-nb:$ cat my_file.txt ; echo ""
 Python is cool
-ralex@ralex-nb:$ 
+ralex@ralex-nb:$
 ```
 
 > status code of a ``GET`` request
@@ -74,7 +74,7 @@ ralex@ralex-nb:$ ./2-statuscode.js https://www.xelar.tech
 code: 200
 ralex@ralex-nb:$ ./2-statuscode.js https://www.xelar.tech/doesntexist
 code: 404
-ralex@ralex-nb:$ 
+ralex@ralex-nb:$
 ```
 
 > Prints the title of a Star Wars movie where the episode number matches a given integer
@@ -86,4 +86,4 @@ ralex@ralex-nb:$
 
 ## Author
 <!-- twitter -->
-[![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- linkedin --> [![Linkedin](https://img.shields.io/badge/LinkedIn-+22K-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/ronald-rivero/) <!-- github --> [![Github](https://img.shields.io/github/followers/ralexrivero?style=social)](https://github.com/ralexrivero/) <!-- vagrant --> [![Vagrant](https://img.shields.io/static/v1?label=&message=Vagrant%20Profile&color=1868F2&logo=vagrant&labelColor=2F333A)](https://app.vagrantup.com/ralexrivero) <!-- docker --> [![Docker](https://img.shields.io/static/v1?label=&message=Docker%20Profile&color=2496ED&logo=Docker&labelColor=2F333A)](https://hub.docker.com/u/ralexrivero)
+[![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- linkedin --> [![Linkedin](https://img.shields.io/badge/LinkedIn-+24K-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/ronald-rivero/) <!-- github --> [![Github](https://img.shields.io/github/followers/ralexrivero?style=social)](https://github.com/ralexrivero/) <!-- vagrant --> [![Vagrant](https://img.shields.io/static/v1?label=&message=Vagrant%20Profile&color=1868F2&logo=vagrant&labelColor=2F333A)](https://app.vagrantup.com/ralexrivero) <!-- docker --> [![Docker](https://img.shields.io/static/v1?label=&message=Docker%20Profile&color=2496ED&logo=Docker&labelColor=2F333A)](https://hub.docker.com/u/ralexrivero)
